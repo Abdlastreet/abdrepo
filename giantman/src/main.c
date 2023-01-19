@@ -12,5 +12,7 @@ int main(int argc, char **argv)
     char *data = huf_data_pull(sep, fd);
     char *cryption = crypt_data_pull(argv[1], sep, fd);
     l_recu_t list = create_letter_list(data);
+    create_hufmann_tree(&list);
+    decrypt_file(&list, cryption);
     return 0;
 }

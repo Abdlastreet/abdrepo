@@ -4,7 +4,7 @@
 ** File description:
 ** len of number
 */
-#include <stdio.h>
+#include "../include/my.h"
 int nbrlen(int nbr)
 {
     int len = 0;
