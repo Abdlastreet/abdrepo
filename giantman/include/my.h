@@ -29,4 +29,5 @@ char *huf_data_pull(int sep, int fd);
 int sep_finder(char const *filepath);
 l_recu_t create_letter_list(char *data);
 int nbrlen(int nbr);
+void decrypt_file(l_recu_t *list, char *cryption);
 #endif /* !MY_H_ */

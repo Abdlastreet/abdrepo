@@ -8,18 +8,18 @@
 void print_crypted_char(char *cryption)
 {
     char buf;
-    int pr = 0;
+    int pr = 7;
     for (int n = 0; cryption[n] != '\0'; n++) {
-        if (pr == 7) {
+        if (pr == -1) {
             my_putchar(buf);
-            pr = 0;
+            pr = 7;
         }
         if (cryption[n] == '0') {
             buf = buf & ~(1 << pr);
         } else {
             buf = buf | (1 << pr);
         }
-        pr++;
+        pr--;
     }
     my_putchar(buf);
 }

@@ -15,7 +15,7 @@ int my_getnbr(char const *str, int n)
             return 0;
         }
         if ((str[n] > 47 && str[n] < 58) && str[n - 1] == '-' && ng == 1)
-            ng = -1;
+            ng = 1;
         if (str[n] > 47 && str[n] < 58)
             nb = (nb * 10) + (str[n] - 48);
         if ((str[n] < 48 || str[n] > 57) && str[n] != '-' && str[n] != '+')

@@ -18,7 +18,8 @@ SRC	=	src/main.c\
 		src/create_hufmann_tree.c\
 		src/create_letter_list.c\
 		src/isolate_smallest_recu.c\
-		src/nbrlen.c
+		src/nbrlen.c\
+		src/decrypt_file.c
 
 OBJ	=	$(SRC:.c=.o)
 
