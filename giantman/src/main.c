@@ -12,12 +12,6 @@ int main(int argc, char **argv)
     char *data = huf_data_pull(sep, fd);
     char *cryption = crypt_data_pull(argv[1], sep, fd);
     l_recu_t list = create_letter_list(data);
-    /*recu_t *current = list.begin;
-    for (int n = 0; n < list.nbletters; n++) {
-        printf("La lettre %c est presente %d fois\n", current->letter, current->recu);
-        current = current->next;
-    }
-    */
     create_hufmann_tree(&list);
     decrypt_file(&list, cryption);
     return 0;
