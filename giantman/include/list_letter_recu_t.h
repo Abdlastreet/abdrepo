@@ -16,6 +16,7 @@ typedef struct l_recu_s {
     recu_t *end2;
     int nbletters;
     int nbletters2;
+    int bits;
 } l_recu_t;
 
 #endif /* !LIST_LETTER_RECU_T_H_ */

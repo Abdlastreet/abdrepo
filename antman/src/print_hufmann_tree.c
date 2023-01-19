@@ -14,4 +14,5 @@ void print_hufmann_tree(l_recu_t *list)
         my_putchar(',');
         current = current->next2;
     }
+    my_putstr("\n\n");
 }

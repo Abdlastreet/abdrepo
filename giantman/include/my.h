@@ -19,13 +19,13 @@ int compare_char_recu(l_recu_t *list, char c);
 void assign_char_recu(l_recu_t *list, recu_t *letter);
 void assign_char_recu2(l_recu_t *list, recu_t *letter);
 recu_t *create_char_recu(char c);
-l_recu_t char_recu(char *file);
 recu_t *smallest_char_recu(l_recu_t *list);
 int remove_char_recu(l_recu_t *list, recu_t *letter);
 void create_new_internal_node(l_recu_t *list);
 void create_hufmann_tree(l_recu_t *list);
 int my_getnbr(char const *str, int n);
-char *data_hufmann_tree(char *file, char const *filepath, int bits);
-char *create_raw_data(char const *filepath, int bits);
-char **refine_data(char *raw_data);
+char *crypt_data_pull(char const *filepath, int sep, int fd);
+char *huf_data_pull(int sep, int fd);
+int sep_finder(char const *filepath);
+l_recu_t create_letter_list(char *data);
 #endif /* !MY_H_ */
