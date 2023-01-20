@@ -15,7 +15,7 @@ void decrypt_file(l_recu_t *list, char *cryption)
             bts = 7;
             ch++;
         }
-        if (cryption[ch] & (1<<bts)) {
+        if (cryption[ch] & (1 << bts)) {
             current = current->one;
         } else {
             current = current->zero;
